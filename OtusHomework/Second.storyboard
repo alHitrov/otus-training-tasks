@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Mrv-bJ-hvU">
+            <objects>
+                <viewController restorationIdentifier="SecondController" storyboardIdentifier="SecondController" id="4nt-3G-L4A" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ttK-qU-4ix">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="universe_04" translatesAutoresizingMaskIntoConstraints="NO" id="OY6-2u-8XS">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second storyboard controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaG-7f-64F">
+                                <rect key="frame" x="77.5" y="94" width="259.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.58039215690000001" green="0.58039215690000001" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Gjz-3R-efm" firstAttribute="bottom" secondItem="OY6-2u-8XS" secondAttribute="bottom" id="LyG-Qj-Nav"/>
+                            <constraint firstItem="Gjz-3R-efm" firstAttribute="trailing" secondItem="OY6-2u-8XS" secondAttribute="trailing" id="VeQ-1A-M6e"/>
+                            <constraint firstItem="OY6-2u-8XS" firstAttribute="leading" secondItem="Gjz-3R-efm" secondAttribute="leading" id="Yjc-zx-9l0"/>
+                            <constraint firstItem="OY6-2u-8XS" firstAttribute="top" secondItem="Gjz-3R-efm" secondAttribute="top" id="ZFF-aL-Bvg"/>
+                            <constraint firstItem="PaG-7f-64F" firstAttribute="top" secondItem="Gjz-3R-efm" secondAttribute="top" constant="50" id="ZLs-Qe-bGW"/>
+                            <constraint firstItem="PaG-7f-64F" firstAttribute="centerX" secondItem="Gjz-3R-efm" secondAttribute="centerX" id="dwI-vL-b37"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gjz-3R-efm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yYx-YZ-ohv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="182.60869565217394" y="104.46428571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="universe_04" width="389" height="129"/>
+    </resources>
+</document>
