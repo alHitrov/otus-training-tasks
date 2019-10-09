@@ -96,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="842" y="-878"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="CJ9-x5-690">
             <objects>
-                <viewController id="9Rx-IL-jn8" sceneMemberID="viewController">
+                <viewController id="9Rx-IL-jn8" customClass="ProfileViewController" customModule="OTUSHomework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EAZ-k4-ZwI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
