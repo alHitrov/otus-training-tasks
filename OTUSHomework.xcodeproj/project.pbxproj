@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B1E5882234E01B800DD848F /* RoundedStyleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E5881234E01B800DD848F /* RoundedStyleButton.swift */; };
+		1B1E5884234E036300DD848F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E5883234E036300DD848F /* ProfileViewController.swift */; };
+		1B1E5886234E1CBE00DD848F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E5885234E1CBE00DD848F /* SecondViewController.swift */; };
+		1B1E5888234E2A9600DD848F /* RoundedStyleButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B1E5887234E2A9600DD848F /* RoundedStyleButton.xib */; };
+		1B1E588D234F38F000DD848F /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E588C234F38F000DD848F /* CustomButton.swift */; };
+		1B1E588F234F390A00DD848F /* CustomButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B1E588E234F390A00DD848F /* CustomButton.xib */; };
+		1B1E5891234F3CF400DD848F /* NibLoadeble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E5890234F3CF400DD848F /* NibLoadeble.swift */; };
+		1B1E5893234F573200DD848F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E5892234F573200DD848F /* FeedViewController.swift */; };
 		1B7DA494232A420F00821A90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7DA493232A420F00821A90 /* AppDelegate.swift */; };
 		1B7DA499232A420F00821A90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B7DA497232A420F00821A90 /* Main.storyboard */; };
 		1B7DA49B232A421100821A90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B7DA49A232A421100821A90 /* Assets.xcassets */; };
@@ -15,6 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B1E5881234E01B800DD848F /* RoundedStyleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedStyleButton.swift; sourceTree = "<group>"; };
+		1B1E5883234E036300DD848F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		1B1E5885234E1CBE00DD848F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		1B1E5887234E2A9600DD848F /* RoundedStyleButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundedStyleButton.xib; sourceTree = "<group>"; };
+		1B1E588C234F38F000DD848F /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		1B1E588E234F390A00DD848F /* CustomButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomButton.xib; sourceTree = "<group>"; };
+		1B1E5890234F3CF400DD848F /* NibLoadeble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadeble.swift; sourceTree = "<group>"; };
+		1B1E5892234F573200DD848F /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		1B7DA490232A420F00821A90 /* OTUSHomework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTUSHomework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B7DA493232A420F00821A90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B7DA498232A420F00821A90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -35,6 +51,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B1E5889234F335300DD848F /* AppLoad */ = {
+			isa = PBXGroup;
+			children = (
+				1B7DA49F232A421100821A90 /* Info.plist */,
+				1B7DA49C232A421100821A90 /* LaunchScreen.storyboard */,
+				1B7DA493232A420F00821A90 /* AppDelegate.swift */,
+			);
+			path = AppLoad;
+			sourceTree = "<group>";
+		};
+		1B1E588A234F336900DD848F /* RoundedStyleButton */ = {
+			isa = PBXGroup;
+			children = (
+				1B1E5887234E2A9600DD848F /* RoundedStyleButton.xib */,
+				1B1E5881234E01B800DD848F /* RoundedStyleButton.swift */,
+			);
+			path = RoundedStyleButton;
+			sourceTree = "<group>";
+		};
+		1B1E588B234F38CB00DD848F /* CustomButton */ = {
+			isa = PBXGroup;
+			children = (
+				1B1E588E234F390A00DD848F /* CustomButton.xib */,
+				1B1E588C234F38F000DD848F /* CustomButton.swift */,
+				1B1E5890234F3CF400DD848F /* NibLoadeble.swift */,
+			);
+			path = CustomButton;
+			sourceTree = "<group>";
+		};
 		1B7DA487232A420F00821A90 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +99,15 @@
 		1B7DA492232A420F00821A90 /* OtusHomework */ = {
 			isa = PBXGroup;
 			children = (
+				1B1E588B234F38CB00DD848F /* CustomButton */,
+				1B1E588A234F336900DD848F /* RoundedStyleButton */,
 				1B7DA497232A420F00821A90 /* Main.storyboard */,
 				1B7DA4C3232A5B0900821A90 /* Second.storyboard */,
-				1B7DA49C232A421100821A90 /* LaunchScreen.storyboard */,
-				1B7DA493232A420F00821A90 /* AppDelegate.swift */,
+				1B1E5885234E1CBE00DD848F /* SecondViewController.swift */,
+				1B1E5883234E036300DD848F /* ProfileViewController.swift */,
+				1B1E5892234F573200DD848F /* FeedViewController.swift */,
+				1B1E5889234F335300DD848F /* AppLoad */,
 				1B7DA49A232A421100821A90 /* Assets.xcassets */,
-				1B7DA49F232A421100821A90 /* Info.plist */,
 			);
 			path = OtusHomework;
 			sourceTree = "<group>";
@@ -125,6 +173,8 @@
 				1B7DA4C4232A5B0A00821A90 /* Second.storyboard in Resources */,
 				1B7DA49E232A421100821A90 /* LaunchScreen.storyboard in Resources */,
 				1B7DA49B232A421100821A90 /* Assets.xcassets in Resources */,
+				1B1E5888234E2A9600DD848F /* RoundedStyleButton.xib in Resources */,
+				1B1E588F234F390A00DD848F /* CustomButton.xib in Resources */,
 				1B7DA499232A420F00821A90 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,7 +186,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B1E5886234E1CBE00DD848F /* SecondViewController.swift in Sources */,
+				1B1E5891234F3CF400DD848F /* NibLoadeble.swift in Sources */,
+				1B1E5884234E036300DD848F /* ProfileViewController.swift in Sources */,
+				1B1E5882234E01B800DD848F /* RoundedStyleButton.swift in Sources */,
 				1B7DA494232A420F00821A90 /* AppDelegate.swift in Sources */,
+				1B1E588D234F38F000DD848F /* CustomButton.swift in Sources */,
+				1B1E5893234F573200DD848F /* FeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +340,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S2EX4B69R4;
-				INFOPLIST_FILE = OtusHomework/Info.plist;
+				INFOPLIST_FILE = OtusHomework/AppLoad/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +358,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S2EX4B69R4;
-				INFOPLIST_FILE = OtusHomework/Info.plist;
+				INFOPLIST_FILE = OtusHomework/AppLoad/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

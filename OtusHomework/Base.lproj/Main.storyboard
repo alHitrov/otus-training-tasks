@@ -96,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="842" y="-878"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="CJ9-x5-690">
             <objects>
-                <viewController id="9Rx-IL-jn8" sceneMemberID="viewController">
+                <viewController id="9Rx-IL-jn8" customClass="ProfileViewController" customModule="OTUSHomework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EAZ-k4-ZwI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -148,10 +148,10 @@
             </objects>
             <point key="canvasLocation" x="842" y="-2202"/>
         </scene>
-        <!--View Controller-->
+        <!--Feed View Controller-->
         <scene sceneID="aKj-Ex-SmI">
             <objects>
-                <viewController id="MDH-Ys-Pbq" sceneMemberID="viewController">
+                <viewController id="MDH-Ys-Pbq" customClass="FeedViewController" customModule="OTUSHomework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MQ3-Oe-2gh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -165,11 +165,38 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VKg-cV-Qze" customClass="CustomButton" customModule="OTUSHomework" customModuleProvider="target">
+                                <rect key="frame" x="41.5" y="425.5" width="331" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Iei-S0-0OS"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Custom button Custom button Custom button"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layerBackgroundColor">
+                                        <color key="value" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.36862745099999999" green="0.63529411759999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="VKg-cV-Qze" firstAttribute="centerY" secondItem="HjF-mY-R0J" secondAttribute="centerY" id="2i5-Qn-ZJC"/>
                             <constraint firstItem="kVD-le-PVU" firstAttribute="trailing" secondItem="HjF-mY-R0J" secondAttribute="trailing" id="5f5-dj-wOX"/>
                             <constraint firstItem="kVD-le-PVU" firstAttribute="bottom" secondItem="HjF-mY-R0J" secondAttribute="bottom" id="8lI-ek-cR4"/>
+                            <constraint firstItem="VKg-cV-Qze" firstAttribute="centerX" secondItem="HjF-mY-R0J" secondAttribute="centerX" id="9q0-Xl-0Ax"/>
                             <constraint firstItem="HjF-mY-R0J" firstAttribute="leading" secondItem="kVD-le-PVU" secondAttribute="leading" id="GD3-qL-RX7"/>
                             <constraint firstItem="HjF-mY-R0J" firstAttribute="top" secondItem="kVD-le-PVU" secondAttribute="top" id="bm5-j7-Ipr"/>
                             <constraint firstItem="iRZ-5y-vpW" firstAttribute="top" secondItem="kVD-le-PVU" secondAttribute="top" constant="50" id="eS2-ut-2g5"/>
@@ -178,6 +205,9 @@
                         <viewLayoutGuide key="safeArea" id="kVD-le-PVU"/>
                     </view>
                     <navigationItem key="navigationItem" id="HWC-ye-ocA"/>
+                    <connections>
+                        <outlet property="customButton" destination="VKg-cV-Qze" id="oWI-hU-7Hw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQU-Um-ACb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
