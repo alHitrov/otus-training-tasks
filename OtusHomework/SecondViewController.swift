@@ -8,21 +8,19 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
-
-    override func viewDidLoad() {
+class SecondViewController: UIViewController, RoundedStyleButtonDelegate {
+	
+	
+	@IBOutlet weak var roundedSytleButton: RoundedStyleButton!
+	
+	override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+		roundedSytleButton.delegate = self;
     }
-    
 
-	@IBAction func middleButtonTaped(_ sender: CustomButton) {
-		sender.shake()
+	func RoundedStyleButtonTapped(_ button: RoundedStyleButton) {
+		button.shake()
 	}
-	
-	
-
-	
 	
 }

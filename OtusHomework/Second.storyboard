@@ -17,7 +17,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="universe_04" translatesAutoresizingMaskIntoConstraints="NO" id="OY6-2u-8XS">
-                                <rect key="frame" x="0.0" y="44" width="414.00000000000011" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second storyboard controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaG-7f-64F">
                                 <rect key="frame" x="77.5" y="94" width="259.5" height="24"/>
@@ -25,21 +26,16 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPS-hb-Ni8" customClass="CustomButton" customModule="OTUSHomework" customModuleProvider="target">
-                                <rect key="frame" x="107" y="433" width="200" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPS-hb-Ni8" customClass="RoundedStyleButton" customModule="OTUSHomework" customModuleProvider="target">
+                                <rect key="frame" x="82" y="428" width="250" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="TXF-Ep-IMP"/>
-                                    <constraint firstAttribute="width" constant="200" id="XER-hb-a3n"/>
+                                    <constraint firstAttribute="height" constant="50" id="TXF-Ep-IMP"/>
+                                    <constraint firstAttribute="width" constant="250" id="enE-JE-5Z7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="middleButton:" destination="aCE-Ok-aj4" eventType="touchUpInside" id="uD8-uG-NY5"/>
-                                    <action selector="middleButtonTaped:" destination="4nt-3G-L4A" eventType="touchUpInside" id="lZg-jO-16R"/>
-                                    <action selector="middleButtonTapped:" destination="aCE-Ok-aj4" eventType="touchUpInside" id="H1n-fX-xjN"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.58039215690000001" green="0.58039215690000001" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -55,9 +51,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Gjz-3R-efm"/>
                     </view>
+                    <connections>
+                        <outlet property="roundedSytleButton" destination="tPS-hb-Ni8" id="SZe-IG-hWA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yYx-YZ-ohv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="aCE-Ok-aj4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="182.60869565217394" y="104.46428571428571"/>
         </scene>

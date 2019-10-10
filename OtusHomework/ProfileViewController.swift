@@ -8,34 +8,31 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, RoundedStyleButtonDelegate {
 	
-	var customButton = CustomButton ()
+	var roundedStyleButton = RoundedStyleButton ()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
 		setupCustomButton()
-		addActionToCustomButton()
-		customButton.setTitle("custom button", for: .normal)
+		roundedStyleButton.setTitle("custom button", for: .normal)
     }
 	
 	func setupCustomButton() {
-		view.addSubview(customButton)
+		view.addSubview(roundedStyleButton)
 		
-		customButton.translatesAutoresizingMaskIntoConstraints = false
-		customButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
-		customButton.widthAnchor.constraint(equalToConstant: 200).isActive = true
-		customButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-		customButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -200 ).isActive = true
+		roundedStyleButton.delegate = self;
+		
+		roundedStyleButton.translatesAutoresizingMaskIntoConstraints = false
+		roundedStyleButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+		roundedStyleButton.widthAnchor.constraint(equalToConstant: 200).isActive = true
+		roundedStyleButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+		roundedStyleButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -200 ).isActive = true
 	}
     
-	func addActionToCustomButton() {
-		customButton.addTarget(self, action: #selector(customButtonTaped), for: .touchUpInside)
+	func RoundedStyleButtonTapped(_ button: RoundedStyleButton) {
+		roundedStyleButton.shake()
 	}
-
-	@objc func customButtonTaped() {
-		print(#function)
-		customButton.shake()
-	}
+	
 }
