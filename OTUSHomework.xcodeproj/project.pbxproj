@@ -17,6 +17,9 @@
 		1B1E5893234F573200DD848F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E5892234F573200DD848F /* FeedViewController.swift */; };
 		1B1E5895234F7B0A00DD848F /* BenchmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E5894234F7B0A00DD848F /* BenchmarkViewController.swift */; };
 		1B1E5897234F8E4800DD848F /* ViewControllerLifecycleBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E5896234F8E4800DD848F /* ViewControllerLifecycleBehavior.swift */; };
+		1B5DC835235478E10093D6B1 /* Behaviours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5DC834235478E10093D6B1 /* Behaviours.swift */; };
+		1B5DC83823547DF60093D6B1 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5DC83723547DF60093D6B1 /* EndViewController.swift */; };
+		1B5DC83A2354989E0093D6B1 /* MiddleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5DC8392354989E0093D6B1 /* MiddleViewController.swift */; };
 		1B7DA494232A420F00821A90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7DA493232A420F00821A90 /* AppDelegate.swift */; };
 		1B7DA499232A420F00821A90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B7DA497232A420F00821A90 /* Main.storyboard */; };
 		1B7DA49B232A421100821A90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B7DA49A232A421100821A90 /* Assets.xcassets */; };
@@ -35,6 +38,9 @@
 		1B1E5892234F573200DD848F /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		1B1E5894234F7B0A00DD848F /* BenchmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkViewController.swift; sourceTree = "<group>"; };
 		1B1E5896234F8E4800DD848F /* ViewControllerLifecycleBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLifecycleBehavior.swift; sourceTree = "<group>"; };
+		1B5DC834235478E10093D6B1 /* Behaviours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Behaviours.swift; sourceTree = "<group>"; };
+		1B5DC83723547DF60093D6B1 /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
+		1B5DC8392354989E0093D6B1 /* MiddleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleViewController.swift; sourceTree = "<group>"; };
 		1B7DA490232A420F00821A90 /* OTUSHomework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTUSHomework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B7DA493232A420F00821A90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B7DA498232A420F00821A90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -84,6 +90,15 @@
 			path = CustomButton;
 			sourceTree = "<group>";
 		};
+		1B5DC8362354790A0093D6B1 /* Behaviours */ = {
+			isa = PBXGroup;
+			children = (
+				1B1E5896234F8E4800DD848F /* ViewControllerLifecycleBehavior.swift */,
+				1B5DC834235478E10093D6B1 /* Behaviours.swift */,
+			);
+			path = Behaviours;
+			sourceTree = "<group>";
+		};
 		1B7DA487232A420F00821A90 = {
 			isa = PBXGroup;
 			children = (
@@ -111,7 +126,9 @@
 				1B1E5894234F7B0A00DD848F /* BenchmarkViewController.swift */,
 				1B1E5892234F573200DD848F /* FeedViewController.swift */,
 				1B1E5883234E036300DD848F /* ProfileViewController.swift */,
-				1B1E5896234F8E4800DD848F /* ViewControllerLifecycleBehavior.swift */,
+				1B5DC8392354989E0093D6B1 /* MiddleViewController.swift */,
+				1B5DC83723547DF60093D6B1 /* EndViewController.swift */,
+				1B5DC8362354790A0093D6B1 /* Behaviours */,
 				1B1E5889234F335300DD848F /* AppLoad */,
 				1B7DA49A232A421100821A90 /* Assets.xcassets */,
 			);
@@ -194,6 +211,7 @@
 			files = (
 				1B1E5897234F8E4800DD848F /* ViewControllerLifecycleBehavior.swift in Sources */,
 				1B1E5886234E1CBE00DD848F /* SecondViewController.swift in Sources */,
+				1B5DC835235478E10093D6B1 /* Behaviours.swift in Sources */,
 				1B1E5891234F3CF400DD848F /* NibLoadeble.swift in Sources */,
 				1B1E5895234F7B0A00DD848F /* BenchmarkViewController.swift in Sources */,
 				1B1E5884234E036300DD848F /* ProfileViewController.swift in Sources */,
@@ -201,6 +219,8 @@
 				1B7DA494232A420F00821A90 /* AppDelegate.swift in Sources */,
 				1B1E588D234F38F000DD848F /* CustomButton.swift in Sources */,
 				1B1E5893234F573200DD848F /* FeedViewController.swift in Sources */,
+				1B5DC83823547DF60093D6B1 /* EndViewController.swift in Sources */,
+				1B5DC83A2354989E0093D6B1 /* MiddleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

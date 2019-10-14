@@ -61,7 +61,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Lu-n2-N9u" customClass="CustomButton" customModule="OTUSHomework" customModuleProvider="target">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Lu-n2-N9u" customClass="CustomButton" customModule="OTUSHomework" customModuleProvider="target">
                                 <rect key="frame" x="155.5" y="425.5" width="103" height="50"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -140,11 +140,36 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pXP-3b-wp4" customClass="CustomButton" customModule="OTUSHomework" customModuleProvider="target">
+                                <rect key="frame" x="107" y="425.5" width="200" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4Ux-wH-2DD"/>
+                                    <constraint firstAttribute="width" constant="200" id="bJc-QO-LJa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="push Next"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layerBackgroundColor">
+                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.81978070569999995" green="0.62756952060000004" blue="0.28162113370000003" alpha="0.82733416410000005" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="pXP-3b-wp4" firstAttribute="centerX" secondItem="gpj-by-fmm" secondAttribute="centerX" id="1A5-hW-a3v"/>
                             <constraint firstItem="gpj-by-fmm" firstAttribute="leading" secondItem="Vmz-VB-jBD" secondAttribute="leading" id="D9N-2w-ukG"/>
                             <constraint firstItem="Vmz-VB-jBD" firstAttribute="trailing" secondItem="gpj-by-fmm" secondAttribute="trailing" id="Etn-Ug-MJC"/>
+                            <constraint firstItem="pXP-3b-wp4" firstAttribute="centerY" secondItem="gpj-by-fmm" secondAttribute="centerY" id="et2-QR-Uy9"/>
                             <constraint firstItem="rE5-Dr-1WT" firstAttribute="top" secondItem="Vmz-VB-jBD" secondAttribute="top" constant="50" id="s1y-Bh-wDx"/>
                             <constraint firstItem="Vmz-VB-jBD" firstAttribute="bottom" secondItem="gpj-by-fmm" secondAttribute="bottom" id="sCy-HJ-Zww"/>
                             <constraint firstItem="gpj-by-fmm" firstAttribute="top" secondItem="Vmz-VB-jBD" secondAttribute="top" id="sEk-EV-yQa"/>
@@ -153,10 +178,14 @@
                         <viewLayoutGuide key="safeArea" id="Vmz-VB-jBD"/>
                     </view>
                     <navigationItem key="navigationItem" id="7ln-uL-TCL"/>
+                    <connections>
+                        <outlet property="pushNextButton" destination="pXP-3b-wp4" id="39Z-tQ-1IB"/>
+                        <segue destination="K66-fi-Jcv" kind="show" identifier="pushNext" id="koc-QI-eLX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lKi-PP-pAF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1551" y="-879"/>
+            <point key="canvasLocation" x="1550.7246376811595" y="-879.24107142857144"/>
         </scene>
         <!--Feed-->
         <scene sceneID="8HH-yE-5nK">
@@ -192,7 +221,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VKg-cV-Qze" customClass="CustomButton" customModule="OTUSHomework" customModuleProvider="target">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VKg-cV-Qze" customClass="CustomButton" customModule="OTUSHomework" customModuleProvider="target">
                                 <rect key="frame" x="41.5" y="425.5" width="331" height="50"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -239,6 +268,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQU-Um-ACb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1551" y="-1542"/>
+        </scene>
+        <!--Middle View Controller-->
+        <scene sceneID="ui6-cV-Rkc">
+            <objects>
+                <viewController id="K66-fi-Jcv" customClass="MiddleViewController" customModule="OTUSHomework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ffh-BC-hdM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwv-V8-9aK">
+                                <rect key="frame" x="170.5" y="435.5" width="73" height="30"/>
+                                <state key="normal" title="go to next "/>
+                                <connections>
+                                    <segue destination="7h0-3y-8vj" kind="show" id="heu-R8-YeV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dwv-V8-9aK" firstAttribute="centerY" secondItem="SyK-x0-2Wd" secondAttribute="centerY" id="IDX-TM-1Wj"/>
+                            <constraint firstItem="dwv-V8-9aK" firstAttribute="centerX" secondItem="SyK-x0-2Wd" secondAttribute="centerX" id="y2w-w5-E6E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SyK-x0-2Wd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ev9-4g-cQ9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qps-A8-dcT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2349" y="-879"/>
+        </scene>
+        <!--End View Controller-->
+        <scene sceneID="eth-Qo-Jza">
+            <objects>
+                <viewController id="7h0-3y-8vj" customClass="EndViewController" customModule="OTUSHomework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U8E-kk-DbI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BgG-Qd-hEA">
+                                <rect key="frame" x="134" y="435.5" width="146" height="30"/>
+                                <state key="normal" title="pop to root controller"/>
+                                <connections>
+                                    <action selector="popToRoot:" destination="7h0-3y-8vj" eventType="touchUpInside" id="37q-3p-DfF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BgG-Qd-hEA" firstAttribute="centerX" secondItem="nuM-gO-x39" secondAttribute="centerX" id="2U1-Yn-zp5"/>
+                            <constraint firstItem="BgG-Qd-hEA" firstAttribute="centerY" secondItem="nuM-gO-x39" secondAttribute="centerY" id="9Th-RU-86X"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nuM-gO-x39"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ext-V7-Pa0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CA1-pH-tEh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3108.6956521739135" y="-879.24107142857144"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="oY2-Vl-N3k">

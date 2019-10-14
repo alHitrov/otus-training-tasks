@@ -8,12 +8,16 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController, RoundedStyleButtonDelegate {
+class ProfileViewController: UIViewController, CustomButtonDelegate {
+	
+	@IBOutlet weak var pushNextButton: CustomButton!
 	
 //	3 На ViewController таба Profile
+	
 //	3.1 написать поведение со сменой цвета статус бара и view.backgroundColor на черный
-//	4 На ViewController(первом) таба Feed сделать кнопку
-//	4.1 По кнопке пушить новый ViewController(второй)
+
+	//	4 На ViewController(первом) таба Feed сделать кнопку
+	//	4.1 По кнопке пушить новый ViewController(второй)
 //	4.2 На новом ViewController добавить еще одну кнопку и по ней показать третий ViewController
 //	4.3 Реализовать переход с третьего ViewController на первый
 	
@@ -22,24 +26,12 @@ class ProfileViewController: UIViewController, RoundedStyleButtonDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-		setupCustomButton()
-		roundedStyleButton.setTitle("custom button", for: .normal)
+
+		pushNextButton.delegate = self
     }
 	
-	func setupCustomButton() {
-		view.addSubview(roundedStyleButton)
-		
-		roundedStyleButton.delegate = self;
-		
-		roundedStyleButton.translatesAutoresizingMaskIntoConstraints = false
-		roundedStyleButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
-		roundedStyleButton.widthAnchor.constraint(equalToConstant: 200).isActive = true
-		roundedStyleButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-		roundedStyleButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -200 ).isActive = true
-	}
-    
-	func RoundedStyleButtonTapped(_ button: RoundedStyleButton) {
-		roundedStyleButton.shake()
+	func customButtonTapped(_ button: CustomButton) {
+		performSegue(withIdentifier: "pushNext", sender: self)
 	}
 	
 }

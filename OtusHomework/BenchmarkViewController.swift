@@ -17,10 +17,12 @@ class BenchmarkViewController: UIViewController {
 //	В runTimed сделайте принт, например так print(Date())
 //	2.2 На beforeDisappearing вызвать таймеру invalidate() чтобы на других экранах он не тикал и не принтил
 	
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		
 		print(#function)
+		
+		addBehaviors(behaviors: [PrintDateBehavior()])
 	}
 	
 	override func viewWillAppear(_ animated: Bool) {
@@ -40,7 +42,5 @@ class BenchmarkViewController: UIViewController {
 		
 		print(#function)
 	}
-
-   
-
+	
 }

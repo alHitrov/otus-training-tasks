@@ -1,11 +1,11 @@
-////
-////  ViewControllerLifecycleBehevior.swift
-////  OTUSHomework
-////
-////  Created by Alexey on 10/10/2019.
-////  Copyright © 2019 GETMOBIT. All rights reserved.
-////
 //
+//  ViewControllerLifecycleBehevior.swift
+//  OTUSHomework
+//
+//  Created by Alexey on 10/10/2019.
+//  Copyright © 2019 GETMOBIT. All rights reserved.
+//
+
 import UIKit
 
 protocol ViewControllerLifecycleBehavior {
@@ -42,17 +42,8 @@ extension ViewControllerLifecycleBehavior {
 	func afterLayingOutSubviews(_ viewController: UIViewController) {}
 }
 
-struct HideNavigationBarBehavior: ViewControllerLifecycleBehavior {
-	func beforeAppearing(viewController: UIViewController) {
-		viewController.navigationController?.setNavigationBarHidden(true, animated: true)
-	}
-	
-	func beforeDisappearing(viewController: UIViewController) {
-		viewController.navigationController?.setNavigationBarHidden(false, animated: true)
-	}
-}
-
 extension UIViewController {
+	
   /*
    Add behaviors to be hooked into this view controller’s lifecycle.
 ​
@@ -66,7 +57,9 @@ extension UIViewController {
 
     addChild(behaviorViewController)
     view.addSubview(behaviorViewController.view)
-    behaviorViewController.didMove(toParent: self)
+	behaviorViewController.didMove(toParent: self)
+	
+//    behaviorViewController.didMove(toParent: self)
   }
 
   private final class LifecycleBehaviorViewController: UIViewController {
@@ -146,12 +139,13 @@ extension UIViewController {
 	
     // MARK: - Private
 
-    private func applyBehaviors(body: (_ behavior: ViewControllerLifecycleBehavior, _ viewController: UIViewController) -> ()) {
-      guard let parentViewController = parent else { return }
+	private func applyBehaviors(body: (_ behavior: ViewControllerLifecycleBehavior, _ viewController: UIViewController) -> ()) {
+		guard let parentViewController = parent else { return }
 
-      for behavior in behaviors {
-        body(behavior, parentViewController)
-      }
+		for behavior in behaviors {
+			body(behavior, parentViewController)
+		}
+		
     }
   }
 }
