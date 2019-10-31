@@ -61,7 +61,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Lu-n2-N9u" customClass="CustomButton" customModule="OTUSHomework" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Lu-n2-N9u" customClass="CustomButton" customModule="OTUSHomework" customModuleProvider="target">
                                 <rect key="frame" x="155.5" y="425.5" width="103" height="50"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -212,62 +212,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="universe_01" translatesAutoresizingMaskIntoConstraints="NO" id="HjF-mY-R0J">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fpb-R0-xSD">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRZ-5y-vpW">
-                                <rect key="frame" x="140" y="138" width="134" height="24"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VKg-cV-Qze" customClass="CustomButton" customModule="OTUSHomework" customModuleProvider="target">
-                                <rect key="frame" x="41.5" y="425.5" width="331" height="50"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Iei-S0-0OS"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="16"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Custom button Custom button Custom button"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="layerBackgroundColor">
-                                        <color key="value" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" rowHeight="60" id="kvm-gM-EGy" customClass="CustomTableViewCell" customModule="OTUSHomework" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kvm-gM-EGy" id="SHA-bJ-58W">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNO-T1-lxT">
+                                                    <rect key="frame" x="20" y="11" width="374" height="38"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="uNO-T1-lxT" firstAttribute="top" secondItem="SHA-bJ-58W" secondAttribute="topMargin" id="B41-QH-Gq2"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="uNO-T1-lxT" secondAttribute="trailing" id="Lt5-RZ-R19"/>
+                                                <constraint firstItem="uNO-T1-lxT" firstAttribute="leading" secondItem="SHA-bJ-58W" secondAttribute="leadingMargin" id="WRq-eF-zrE"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="uNO-T1-lxT" secondAttribute="bottom" id="idH-eZ-O0z"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="title" destination="uNO-T1-lxT" id="hUO-iw-cWJ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.36862745099999999" green="0.63529411759999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="VKg-cV-Qze" firstAttribute="centerY" secondItem="HjF-mY-R0J" secondAttribute="centerY" id="2i5-Qn-ZJC"/>
-                            <constraint firstItem="kVD-le-PVU" firstAttribute="trailing" secondItem="HjF-mY-R0J" secondAttribute="trailing" id="5f5-dj-wOX"/>
-                            <constraint firstItem="kVD-le-PVU" firstAttribute="bottom" secondItem="HjF-mY-R0J" secondAttribute="bottom" id="8lI-ek-cR4"/>
-                            <constraint firstItem="VKg-cV-Qze" firstAttribute="centerX" secondItem="HjF-mY-R0J" secondAttribute="centerX" id="9q0-Xl-0Ax"/>
-                            <constraint firstItem="HjF-mY-R0J" firstAttribute="leading" secondItem="kVD-le-PVU" secondAttribute="leading" id="GD3-qL-RX7"/>
-                            <constraint firstItem="HjF-mY-R0J" firstAttribute="top" secondItem="kVD-le-PVU" secondAttribute="top" id="bm5-j7-Ipr"/>
-                            <constraint firstItem="iRZ-5y-vpW" firstAttribute="top" secondItem="kVD-le-PVU" secondAttribute="top" constant="50" id="eS2-ut-2g5"/>
-                            <constraint firstItem="iRZ-5y-vpW" firstAttribute="centerX" secondItem="kVD-le-PVU" secondAttribute="centerX" id="rg8-eb-LlJ"/>
+                            <constraint firstItem="kVD-le-PVU" firstAttribute="bottom" secondItem="fpb-R0-xSD" secondAttribute="bottom" id="531-Of-dSD"/>
+                            <constraint firstItem="fpb-R0-xSD" firstAttribute="top" secondItem="kVD-le-PVU" secondAttribute="top" id="DXe-Hb-h2Q"/>
+                            <constraint firstItem="fpb-R0-xSD" firstAttribute="leading" secondItem="kVD-le-PVU" secondAttribute="leading" id="hpL-oJ-518"/>
+                            <constraint firstItem="kVD-le-PVU" firstAttribute="trailing" secondItem="fpb-R0-xSD" secondAttribute="trailing" id="uV8-bO-FuU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kVD-le-PVU"/>
                     </view>
                     <navigationItem key="navigationItem" id="HWC-ye-ocA"/>
                     <connections>
-                        <outlet property="customButton" destination="VKg-cV-Qze" id="oWI-hU-7Hw"/>
+                        <outlet property="tableView" destination="fpb-R0-xSD" id="AQ3-7L-i4n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQU-Um-ACb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1551" y="-1542"/>
+            <point key="canvasLocation" x="1550.7246376811595" y="-1542.1875"/>
         </scene>
         <!--Middle View Controller-->
         <scene sceneID="ui6-cV-Rkc">
@@ -368,7 +361,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="universe_01" width="835" height="557"/>
         <image name="universe_02" width="718" height="475"/>
         <image name="universe_03" width="259" height="194"/>
     </resources>

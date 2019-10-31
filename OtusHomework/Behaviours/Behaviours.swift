@@ -41,6 +41,17 @@ struct HideNavigationBarBehavior: ViewControllerLifecycleBehavior {
 		viewController.navigationController?.setNavigationBarHidden(false, animated: true)
 	}
 }
+struct ShowNavigationBarBehavior: ViewControllerLifecycleBehavior {
+	func beforeAppearing(_ viewController: UIViewController) {
+		viewController.navigationController?.setNavigationBarHidden(false, animated: true)
+//		viewController.navigationController?.setNavigationBarHidden(true, animated: true)
+	}
+	
+	func beforeDisappearing(_ viewController: UIViewController) {
+		
+	}
+}
+
 
 struct ChangeToDarkSyleBeheviour: ViewControllerLifecycleBehavior {
 	

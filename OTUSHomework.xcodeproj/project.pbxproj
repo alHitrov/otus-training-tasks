@@ -17,6 +17,10 @@
 		1B1E5893234F573200DD848F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E5892234F573200DD848F /* FeedViewController.swift */; };
 		1B1E5895234F7B0A00DD848F /* BenchmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E5894234F7B0A00DD848F /* BenchmarkViewController.swift */; };
 		1B1E5897234F8E4800DD848F /* ViewControllerLifecycleBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E5896234F8E4800DD848F /* ViewControllerLifecycleBehavior.swift */; };
+		1B4B68CD236B003B008F13B0 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B68CC236B003A008F13B0 /* CustomTableViewCell.swift */; };
+		1B4B68D1236B0CC4008F13B0 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B68CF236B0CC4008F13B0 /* Services.swift */; };
+		1B4B68D2236B0CC4008F13B0 /* DataSourceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B68D0236B0CC4008F13B0 /* DataSourceProvider.swift */; };
+		1B4B68D4236B1182008F13B0 /* SessionSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B68D3236B1182008F13B0 /* SessionSummaryViewController.swift */; };
 		1B5DC835235478E10093D6B1 /* Behaviours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5DC834235478E10093D6B1 /* Behaviours.swift */; };
 		1B5DC83823547DF60093D6B1 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5DC83723547DF60093D6B1 /* EndViewController.swift */; };
 		1B5DC83A2354989E0093D6B1 /* MiddleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5DC8392354989E0093D6B1 /* MiddleViewController.swift */; };
@@ -38,6 +42,10 @@
 		1B1E5892234F573200DD848F /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		1B1E5894234F7B0A00DD848F /* BenchmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkViewController.swift; sourceTree = "<group>"; };
 		1B1E5896234F8E4800DD848F /* ViewControllerLifecycleBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLifecycleBehavior.swift; sourceTree = "<group>"; };
+		1B4B68CC236B003A008F13B0 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		1B4B68CF236B0CC4008F13B0 /* Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		1B4B68D0236B0CC4008F13B0 /* DataSourceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSourceProvider.swift; sourceTree = "<group>"; };
+		1B4B68D3236B1182008F13B0 /* SessionSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSummaryViewController.swift; sourceTree = "<group>"; };
 		1B5DC834235478E10093D6B1 /* Behaviours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Behaviours.swift; sourceTree = "<group>"; };
 		1B5DC83723547DF60093D6B1 /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
 		1B5DC8392354989E0093D6B1 /* MiddleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +98,47 @@
 			path = CustomButton;
 			sourceTree = "<group>";
 		};
+		1B4B68C9236AFDEF008F13B0 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				1B1E588B234F38CB00DD848F /* CustomButton */,
+				1B1E588A234F336900DD848F /* RoundedStyleButton */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		1B4B68CA236AFFF6008F13B0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B4B68CB236B0008008F13B0 /* Cells */,
+				1B1E5894234F7B0A00DD848F /* BenchmarkViewController.swift */,
+				1B1E5892234F573200DD848F /* FeedViewController.swift */,
+				1B1E5883234E036300DD848F /* ProfileViewController.swift */,
+				1B5DC8392354989E0093D6B1 /* MiddleViewController.swift */,
+				1B5DC83723547DF60093D6B1 /* EndViewController.swift */,
+				1B4B68D3236B1182008F13B0 /* SessionSummaryViewController.swift */,
+				1B1E5885234E1CBE00DD848F /* SecondViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1B4B68CB236B0008008F13B0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1B4B68CC236B003A008F13B0 /* CustomTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1B4B68CE236B0CC4008F13B0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1B4B68CF236B0CC4008F13B0 /* Services.swift */,
+				1B4B68D0236B0CC4008F13B0 /* DataSourceProvider.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		1B5DC8362354790A0093D6B1 /* Behaviours */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,19 +167,14 @@
 		1B7DA492232A420F00821A90 /* OtusHomework */ = {
 			isa = PBXGroup;
 			children = (
-				1B1E588B234F38CB00DD848F /* CustomButton */,
-				1B1E588A234F336900DD848F /* RoundedStyleButton */,
-				1B7DA497232A420F00821A90 /* Main.storyboard */,
-				1B7DA4C3232A5B0900821A90 /* Second.storyboard */,
-				1B1E5885234E1CBE00DD848F /* SecondViewController.swift */,
-				1B1E5894234F7B0A00DD848F /* BenchmarkViewController.swift */,
-				1B1E5892234F573200DD848F /* FeedViewController.swift */,
-				1B1E5883234E036300DD848F /* ProfileViewController.swift */,
-				1B5DC8392354989E0093D6B1 /* MiddleViewController.swift */,
-				1B5DC83723547DF60093D6B1 /* EndViewController.swift */,
-				1B5DC8362354790A0093D6B1 /* Behaviours */,
 				1B1E5889234F335300DD848F /* AppLoad */,
 				1B7DA49A232A421100821A90 /* Assets.xcassets */,
+				1B4B68C9236AFDEF008F13B0 /* Controls */,
+				1B5DC8362354790A0093D6B1 /* Behaviours */,
+				1B4B68CE236B0CC4008F13B0 /* Services */,
+				1B4B68CA236AFFF6008F13B0 /* Controllers */,
+				1B7DA497232A420F00821A90 /* Main.storyboard */,
+				1B7DA4C3232A5B0900821A90 /* Second.storyboard */,
 			);
 			path = OtusHomework;
 			sourceTree = "<group>";
@@ -212,15 +256,19 @@
 				1B1E5897234F8E4800DD848F /* ViewControllerLifecycleBehavior.swift in Sources */,
 				1B1E5886234E1CBE00DD848F /* SecondViewController.swift in Sources */,
 				1B5DC835235478E10093D6B1 /* Behaviours.swift in Sources */,
+				1B4B68D1236B0CC4008F13B0 /* Services.swift in Sources */,
 				1B1E5891234F3CF400DD848F /* NibLoadeble.swift in Sources */,
 				1B1E5895234F7B0A00DD848F /* BenchmarkViewController.swift in Sources */,
+				1B4B68D4236B1182008F13B0 /* SessionSummaryViewController.swift in Sources */,
 				1B1E5884234E036300DD848F /* ProfileViewController.swift in Sources */,
+				1B4B68D2236B0CC4008F13B0 /* DataSourceProvider.swift in Sources */,
 				1B1E5882234E01B800DD848F /* RoundedStyleButton.swift in Sources */,
 				1B7DA494232A420F00821A90 /* AppDelegate.swift in Sources */,
 				1B1E588D234F38F000DD848F /* CustomButton.swift in Sources */,
 				1B1E5893234F573200DD848F /* FeedViewController.swift in Sources */,
 				1B5DC83823547DF60093D6B1 /* EndViewController.swift in Sources */,
 				1B5DC83A2354989E0093D6B1 /* MiddleViewController.swift in Sources */,
+				1B4B68CD236B003B008F13B0 /* CustomTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,15 +8,8 @@
 
 import UIKit
 
-class BenchmarkViewController: UIViewController {
+final class BenchmarkViewController: UIViewController {
 
-	
-	//	2 Реализовать View controller lifecycle behaviors для вью контоллера Benchmark
-//	2.1 Добавить поведение afterAppearing c запуском таймера:
-//	timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(runTimed), userInfo: nil, repeats: true)
-//	В runTimed сделайте принт, например так print(Date())
-//	2.2 На beforeDisappearing вызвать таймеру invalidate() чтобы на других экранах он не тикал и не принтил
-	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
