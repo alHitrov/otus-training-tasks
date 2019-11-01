@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -52,55 +53,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="universe_02" translatesAutoresizingMaskIntoConstraints="NO" id="ENx-uQ-mV8">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MB4-nE-K8v">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Benchmark controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ruR-bn-7aY">
-                                <rect key="frame" x="111.5" y="138" width="191.5" height="24"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Lu-n2-N9u" customClass="CustomButton" customModule="OTUSHomework" customModuleProvider="target">
-                                <rect key="frame" x="155.5" y="425.5" width="103" height="50"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="86W-Iy-66I"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="layerBackgroundColor">
-                                        <color key="value" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="some button"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PbD-x1-n35">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Nwg-ai-XqD">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="lE3-5C-Sx8">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
-                        <color key="backgroundColor" red="0.57494360690000001" green="0.97518342729999996" blue="0.53849358920000001" alpha="0.53206480060000005" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ruR-bn-7aY" firstAttribute="top" secondItem="Wdt-1Z-TbI" secondAttribute="top" constant="50" id="78d-8h-s2U"/>
-                            <constraint firstItem="ENx-uQ-mV8" firstAttribute="top" secondItem="Wdt-1Z-TbI" secondAttribute="top" id="DZe-rh-hdg"/>
-                            <constraint firstItem="8Lu-n2-N9u" firstAttribute="centerX" secondItem="ENx-uQ-mV8" secondAttribute="centerX" id="Khz-Fw-tPN"/>
-                            <constraint firstItem="Wdt-1Z-TbI" firstAttribute="bottom" secondItem="ENx-uQ-mV8" secondAttribute="bottom" id="WlV-vU-4j9"/>
-                            <constraint firstItem="Wdt-1Z-TbI" firstAttribute="trailing" secondItem="ENx-uQ-mV8" secondAttribute="trailing" id="ZEj-9a-xws"/>
-                            <constraint firstItem="8Lu-n2-N9u" firstAttribute="centerY" secondItem="ENx-uQ-mV8" secondAttribute="centerY" id="jhX-fs-O7a"/>
-                            <constraint firstItem="ENx-uQ-mV8" firstAttribute="leading" secondItem="Wdt-1Z-TbI" secondAttribute="leading" id="nqI-Ht-8UK"/>
-                            <constraint firstItem="ruR-bn-7aY" firstAttribute="centerX" secondItem="Wdt-1Z-TbI" secondAttribute="centerX" id="xNK-8R-FCd"/>
+                            <constraint firstItem="Wdt-1Z-TbI" firstAttribute="bottom" secondItem="MB4-nE-K8v" secondAttribute="bottom" id="3Eu-VK-h6N"/>
+                            <constraint firstItem="MB4-nE-K8v" firstAttribute="leading" secondItem="Wdt-1Z-TbI" secondAttribute="leading" id="8VI-qy-Gnj"/>
+                            <constraint firstItem="MB4-nE-K8v" firstAttribute="top" secondItem="Wdt-1Z-TbI" secondAttribute="top" id="IRj-Br-Uyc"/>
+                            <constraint firstItem="Wdt-1Z-TbI" firstAttribute="trailing" secondItem="MB4-nE-K8v" secondAttribute="trailing" id="UWS-IO-GOc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Wdt-1Z-TbI"/>
                     </view>
                     <navigationItem key="navigationItem" id="oSu-yc-UkH"/>
+                    <connections>
+                        <outlet property="collectionView" destination="MB4-nE-K8v" id="lgH-oR-G3B"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c8e-Jr-dIQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -361,7 +347,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="universe_02" width="718" height="475"/>
         <image name="universe_03" width="259" height="194"/>
     </resources>
 </document>

@@ -14,7 +14,7 @@ final class DataSourceProvider {
 		
 		var source: [String] = []
 		
-		(0...10).forEach { i in
+		(0...20).forEach { i in
 			source.append("item \(i)")
         }
 		

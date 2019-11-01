@@ -14,4 +14,7 @@ class Services {
         return DataSourceProvider()
     }()
     
+	static var timeCellProvider: TimeCellProvider = {
+        return TimeCellProvider()
+    }()
 }
