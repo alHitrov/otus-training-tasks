@@ -38,6 +38,7 @@
 		1B7DA49B232A421100821A90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B7DA49A232A421100821A90 /* Assets.xcassets */; };
 		1B7DA49E232A421100821A90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B7DA49C232A421100821A90 /* LaunchScreen.storyboard */; };
 		1B7DA4C4232A5B0A00821A90 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B7DA4C3232A5B0900821A90 /* Second.storyboard */; };
+		1B9851B2238D25E0000939AA /* NotificationNameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9851B1238D25DF000939AA /* NotificationNameExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		1B7DA49D232A421100821A90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B7DA49F232A421100821A90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B7DA4C3232A5B0900821A90 /* Second.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
+		1B9851B1238D25DF000939AA /* NotificationNameExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,12 +232,21 @@
 				1B4B68C9236AFDEF008F13B0 /* Controls */,
 				1B5DC8362354790A0093D6B1 /* ControllerLifeCycleBeheviours */,
 				1B4B68CE236B0CC4008F13B0 /* Services */,
+				1B9851B0238D25BA000939AA /* Notifications */,
 				1B4B68CB236B0008008F13B0 /* Cells */,
 				1B4B68CA236AFFF6008F13B0 /* Controllers */,
 				1B7DA497232A420F00821A90 /* Main.storyboard */,
 				1B7DA4C3232A5B0900821A90 /* Second.storyboard */,
 			);
 			path = OtusHomework;
+			sourceTree = "<group>";
+		};
+		1B9851B0238D25BA000939AA /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				1B9851B1238D25DF000939AA /* NotificationNameExtension.swift */,
+			);
+			path = Notifications;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,6 +328,7 @@
 				1B1E5886234E1CBE00DD848F /* SecondViewController.swift in Sources */,
 				1B4B68D1236B0CC4008F13B0 /* Services.swift in Sources */,
 				1B1E5891234F3CF400DD848F /* NibLoadeble.swift in Sources */,
+				1B9851B2238D25E0000939AA /* NotificationNameExtension.swift in Sources */,
 				1B4B68EE236B4732008F13B0 /* Date+CurrentTime.swift in Sources */,
 				1B1E5895234F7B0A00DD848F /* BenchmarkViewController.swift in Sources */,
 				1B4B68D4236B1182008F13B0 /* SessionSummaryViewController.swift in Sources */,

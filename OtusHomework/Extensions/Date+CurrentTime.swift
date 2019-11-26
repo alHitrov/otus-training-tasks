@@ -10,16 +10,10 @@ import Foundation
 
 extension Date {
 	
-	func currentTime() -> String {
-//		let date = self
-//		let calendar = Calendar.current
-//		let hour = calendar.component(.hour, from: date)
-//		let minutes = calendar.component(.minute, from: date)
-//		let seconds = calendar.component(.second, from: date)
-//		return "\(hour):\(minutes):\(seconds)"
+	func formattedTime() -> String {
 		
 		let formatter = DateFormatter()
-		formatter.dateFormat = "hh:mm:ss a" // "a" prints "pm" or "am"
+		formatter.timeStyle = .medium
 		return formatter.string(from: Date()) // "12 AM"
 	}
 }

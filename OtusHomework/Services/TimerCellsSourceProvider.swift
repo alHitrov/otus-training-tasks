@@ -17,18 +17,18 @@ struct TimeCellProvider {
     
     func makeData() -> [FormattedTime] {
         return [
-			FormattedTime(time: "\(Date().currentTime())"),
-			FormattedTime(time: "\(Date().currentTime())"),
-			FormattedTime(time: "\(Date().currentTime())"),
-			FormattedTime(time: "\(Date().currentTime())"),
-			FormattedTime(time: "\(Date().currentTime())"),
-			FormattedTime(time: "\(Date().currentTime())"),
-			FormattedTime(time: "\(Date().currentTime())"),
-			FormattedTime(time: "\(Date().currentTime())"),
-			FormattedTime(time: "\(Date().currentTime())"),
-			FormattedTime(time: "\(Date().currentTime())"),
-			FormattedTime(time: "\(Date().currentTime())"),
-			FormattedTime(time: "\(Date().currentTime())"),
+			FormattedTime(time: "\(Date().formattedTime())"),
+			FormattedTime(time: "\(Date().formattedTime())"),
+			FormattedTime(time: "\(Date().formattedTime())"),
+			FormattedTime(time: "\(Date().formattedTime())"),
+			FormattedTime(time: "\(Date().formattedTime())"),
+			FormattedTime(time: "\(Date().formattedTime())"),
+			FormattedTime(time: "\(Date().formattedTime())"),
+			FormattedTime(time: "\(Date().formattedTime())"),
+			FormattedTime(time: "\(Date().formattedTime())"),
+			FormattedTime(time: "\(Date().formattedTime())"),
+			FormattedTime(time: "\(Date().formattedTime())"),
+			FormattedTime(time: "\(Date().formattedTime())"),
 		]
     }
 }

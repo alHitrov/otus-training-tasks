@@ -26,6 +26,12 @@ final class FeedViewController: UIViewController {
 		barButtonItem.title = ""
 		navigationItem.backBarButtonItem = barButtonItem
     }
+	
+	override func viewWillDisappear(_ animated: Bool) {
+		super.viewWillDisappear(animated)
+		tableView.reloadData()
+//		print(#function.uppercased() + "\(self)")
+	}
 
 	func fillSource() {
 		source = Services.dataSourceProvider.createSource()
@@ -42,6 +48,7 @@ extension FeedViewController: UITableViewDataSource {
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		
 		let cell = tableView.dequeueReusableCell(withIdentifier:"customCell") as! CustomTableViewCell
+//		print(#function)
 		
 		cell.title.text = source[indexPath.row]
 		
