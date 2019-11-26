@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EndViewController: UIViewController {
+final class EndViewController: UIViewController {
 
 	
 	
@@ -19,7 +19,6 @@ class EndViewController: UIViewController {
 	}
 	
 	@IBAction func popToRoot(_ sender: UIButton) {
-//		navigationController?.popViewController(animated: true)
 		navigationController?.popToRootViewController(animated: true)
 	}
 	

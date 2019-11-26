@@ -17,7 +17,20 @@
 		1B1E5893234F573200DD848F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E5892234F573200DD848F /* FeedViewController.swift */; };
 		1B1E5895234F7B0A00DD848F /* BenchmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E5894234F7B0A00DD848F /* BenchmarkViewController.swift */; };
 		1B1E5897234F8E4800DD848F /* ViewControllerLifecycleBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E5896234F8E4800DD848F /* ViewControllerLifecycleBehavior.swift */; };
-		1B5DC835235478E10093D6B1 /* Behaviours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5DC834235478E10093D6B1 /* Behaviours.swift */; };
+		1B4B68CD236B003B008F13B0 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B68CC236B003A008F13B0 /* CustomTableViewCell.swift */; };
+		1B4B68D1236B0CC4008F13B0 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B68CF236B0CC4008F13B0 /* Services.swift */; };
+		1B4B68D2236B0CC4008F13B0 /* DataSourceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B68D0236B0CC4008F13B0 /* DataSourceProvider.swift */; };
+		1B4B68D4236B1182008F13B0 /* SessionSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B68D3236B1182008F13B0 /* SessionSummaryViewController.swift */; };
+		1B4B68D6236B1EF2008F13B0 /* ControllerDarkStyleBeheviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B68D5236B1EF2008F13B0 /* ControllerDarkStyleBeheviour.swift */; };
+		1B4B68D8236B1F48008F13B0 /* NavigationBarShowHideBeheviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B68D7236B1F48008F13B0 /* NavigationBarShowHideBeheviour.swift */; };
+		1B4B68DA236B1F91008F13B0 /* DatePrintingBeheviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B68D9236B1F91008F13B0 /* DatePrintingBeheviour.swift */; };
+		1B4B68E1236B2BC0008F13B0 /* TimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B68DF236B2BC0008F13B0 /* TimeCell.swift */; };
+		1B4B68E2236B2BC0008F13B0 /* TimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B4B68E0236B2BC0008F13B0 /* TimeCell.xib */; };
+		1B4B68E4236B2E57008F13B0 /* TimerCellsSourceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B68E3236B2E57008F13B0 /* TimerCellsSourceProvider.swift */; };
+		1B4B68E7236B32D7008F13B0 /* UIColor+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B68E6236B32D7008F13B0 /* UIColor+Random.swift */; };
+		1B4B68EA236B4221008F13B0 /* CustomCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B68E9236B4221008F13B0 /* CustomCollectionViewLayout.swift */; };
+		1B4B68EC236B431B008F13B0 /* StagLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B68EB236B431B008F13B0 /* StagLayout.swift */; };
+		1B4B68EE236B4732008F13B0 /* Date+CurrentTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B68ED236B4732008F13B0 /* Date+CurrentTime.swift */; };
 		1B5DC83823547DF60093D6B1 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5DC83723547DF60093D6B1 /* EndViewController.swift */; };
 		1B5DC83A2354989E0093D6B1 /* MiddleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5DC8392354989E0093D6B1 /* MiddleViewController.swift */; };
 		1B7DA494232A420F00821A90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7DA493232A420F00821A90 /* AppDelegate.swift */; };
@@ -25,6 +38,7 @@
 		1B7DA49B232A421100821A90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B7DA49A232A421100821A90 /* Assets.xcassets */; };
 		1B7DA49E232A421100821A90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B7DA49C232A421100821A90 /* LaunchScreen.storyboard */; };
 		1B7DA4C4232A5B0A00821A90 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B7DA4C3232A5B0900821A90 /* Second.storyboard */; };
+		1B9851B2238D25E0000939AA /* NotificationNameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9851B1238D25DF000939AA /* NotificationNameExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +52,20 @@
 		1B1E5892234F573200DD848F /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		1B1E5894234F7B0A00DD848F /* BenchmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkViewController.swift; sourceTree = "<group>"; };
 		1B1E5896234F8E4800DD848F /* ViewControllerLifecycleBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLifecycleBehavior.swift; sourceTree = "<group>"; };
-		1B5DC834235478E10093D6B1 /* Behaviours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Behaviours.swift; sourceTree = "<group>"; };
+		1B4B68CC236B003A008F13B0 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		1B4B68CF236B0CC4008F13B0 /* Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		1B4B68D0236B0CC4008F13B0 /* DataSourceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSourceProvider.swift; sourceTree = "<group>"; };
+		1B4B68D3236B1182008F13B0 /* SessionSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSummaryViewController.swift; sourceTree = "<group>"; };
+		1B4B68D5236B1EF2008F13B0 /* ControllerDarkStyleBeheviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerDarkStyleBeheviour.swift; sourceTree = "<group>"; };
+		1B4B68D7236B1F48008F13B0 /* NavigationBarShowHideBeheviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarShowHideBeheviour.swift; sourceTree = "<group>"; };
+		1B4B68D9236B1F91008F13B0 /* DatePrintingBeheviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePrintingBeheviour.swift; sourceTree = "<group>"; };
+		1B4B68DF236B2BC0008F13B0 /* TimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
+		1B4B68E0236B2BC0008F13B0 /* TimeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeCell.xib; sourceTree = "<group>"; };
+		1B4B68E3236B2E57008F13B0 /* TimerCellsSourceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCellsSourceProvider.swift; sourceTree = "<group>"; };
+		1B4B68E6236B32D7008F13B0 /* UIColor+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Random.swift"; sourceTree = "<group>"; };
+		1B4B68E9236B4221008F13B0 /* CustomCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewLayout.swift; sourceTree = "<group>"; };
+		1B4B68EB236B431B008F13B0 /* StagLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StagLayout.swift; sourceTree = "<group>"; };
+		1B4B68ED236B4732008F13B0 /* Date+CurrentTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+CurrentTime.swift"; sourceTree = "<group>"; };
 		1B5DC83723547DF60093D6B1 /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
 		1B5DC8392354989E0093D6B1 /* MiddleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleViewController.swift; sourceTree = "<group>"; };
 		1B7DA490232A420F00821A90 /* OTUSHomework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTUSHomework.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +75,7 @@
 		1B7DA49D232A421100821A90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B7DA49F232A421100821A90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B7DA4C3232A5B0900821A90 /* Second.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
+		1B9851B1238D25DF000939AA /* NotificationNameExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,13 +118,92 @@
 			path = CustomButton;
 			sourceTree = "<group>";
 		};
-		1B5DC8362354790A0093D6B1 /* Behaviours */ = {
+		1B4B68C9236AFDEF008F13B0 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				1B1E588B234F38CB00DD848F /* CustomButton */,
+				1B1E588A234F336900DD848F /* RoundedStyleButton */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		1B4B68CA236AFFF6008F13B0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B1E5894234F7B0A00DD848F /* BenchmarkViewController.swift */,
+				1B1E5892234F573200DD848F /* FeedViewController.swift */,
+				1B1E5883234E036300DD848F /* ProfileViewController.swift */,
+				1B5DC8392354989E0093D6B1 /* MiddleViewController.swift */,
+				1B5DC83723547DF60093D6B1 /* EndViewController.swift */,
+				1B4B68D3236B1182008F13B0 /* SessionSummaryViewController.swift */,
+				1B1E5885234E1CBE00DD848F /* SecondViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1B4B68CB236B0008008F13B0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1B4B68DB236B2484008F13B0 /* TableViewCells */,
+				1B4B68DC236B249A008F13B0 /* CollectionViewCells */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1B4B68CE236B0CC4008F13B0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1B4B68CF236B0CC4008F13B0 /* Services.swift */,
+				1B4B68D0236B0CC4008F13B0 /* DataSourceProvider.swift */,
+				1B4B68E3236B2E57008F13B0 /* TimerCellsSourceProvider.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1B4B68DB236B2484008F13B0 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				1B4B68CC236B003A008F13B0 /* CustomTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		1B4B68DC236B249A008F13B0 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				1B4B68E0236B2BC0008F13B0 /* TimeCell.xib */,
+				1B4B68DF236B2BC0008F13B0 /* TimeCell.swift */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		1B4B68E5236B329A008F13B0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1B4B68E6236B32D7008F13B0 /* UIColor+Random.swift */,
+				1B4B68ED236B4732008F13B0 /* Date+CurrentTime.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1B4B68E8236B4211008F13B0 /* CustomCollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				1B4B68E9236B4221008F13B0 /* CustomCollectionViewLayout.swift */,
+				1B4B68EB236B431B008F13B0 /* StagLayout.swift */,
+			);
+			path = CustomCollectionViewLayout;
+			sourceTree = "<group>";
+		};
+		1B5DC8362354790A0093D6B1 /* ControllerLifeCycleBeheviours */ = {
 			isa = PBXGroup;
 			children = (
 				1B1E5896234F8E4800DD848F /* ViewControllerLifecycleBehavior.swift */,
-				1B5DC834235478E10093D6B1 /* Behaviours.swift */,
+				1B4B68D5236B1EF2008F13B0 /* ControllerDarkStyleBeheviour.swift */,
+				1B4B68D7236B1F48008F13B0 /* NavigationBarShowHideBeheviour.swift */,
+				1B4B68D9236B1F91008F13B0 /* DatePrintingBeheviour.swift */,
 			);
-			path = Behaviours;
+			path = ControllerLifeCycleBeheviours;
 			sourceTree = "<group>";
 		};
 		1B7DA487232A420F00821A90 = {
@@ -118,21 +225,28 @@
 		1B7DA492232A420F00821A90 /* OtusHomework */ = {
 			isa = PBXGroup;
 			children = (
-				1B1E588B234F38CB00DD848F /* CustomButton */,
-				1B1E588A234F336900DD848F /* RoundedStyleButton */,
+				1B1E5889234F335300DD848F /* AppLoad */,
+				1B4B68E8236B4211008F13B0 /* CustomCollectionViewLayout */,
+				1B4B68E5236B329A008F13B0 /* Extensions */,
+				1B7DA49A232A421100821A90 /* Assets.xcassets */,
+				1B4B68C9236AFDEF008F13B0 /* Controls */,
+				1B5DC8362354790A0093D6B1 /* ControllerLifeCycleBeheviours */,
+				1B4B68CE236B0CC4008F13B0 /* Services */,
+				1B9851B0238D25BA000939AA /* Notifications */,
+				1B4B68CB236B0008008F13B0 /* Cells */,
+				1B4B68CA236AFFF6008F13B0 /* Controllers */,
 				1B7DA497232A420F00821A90 /* Main.storyboard */,
 				1B7DA4C3232A5B0900821A90 /* Second.storyboard */,
-				1B1E5885234E1CBE00DD848F /* SecondViewController.swift */,
-				1B1E5894234F7B0A00DD848F /* BenchmarkViewController.swift */,
-				1B1E5892234F573200DD848F /* FeedViewController.swift */,
-				1B1E5883234E036300DD848F /* ProfileViewController.swift */,
-				1B5DC8392354989E0093D6B1 /* MiddleViewController.swift */,
-				1B5DC83723547DF60093D6B1 /* EndViewController.swift */,
-				1B5DC8362354790A0093D6B1 /* Behaviours */,
-				1B1E5889234F335300DD848F /* AppLoad */,
-				1B7DA49A232A421100821A90 /* Assets.xcassets */,
 			);
 			path = OtusHomework;
+			sourceTree = "<group>";
+		};
+		1B9851B0238D25BA000939AA /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				1B9851B1238D25DF000939AA /* NotificationNameExtension.swift */,
+			);
+			path = Notifications;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B4B68E2236B2BC0008F13B0 /* TimeCell.xib in Resources */,
 				1B7DA4C4232A5B0A00821A90 /* Second.storyboard in Resources */,
 				1B7DA49E232A421100821A90 /* LaunchScreen.storyboard in Resources */,
 				1B7DA49B232A421100821A90 /* Assets.xcassets in Resources */,
@@ -211,16 +326,29 @@
 			files = (
 				1B1E5897234F8E4800DD848F /* ViewControllerLifecycleBehavior.swift in Sources */,
 				1B1E5886234E1CBE00DD848F /* SecondViewController.swift in Sources */,
-				1B5DC835235478E10093D6B1 /* Behaviours.swift in Sources */,
+				1B4B68D1236B0CC4008F13B0 /* Services.swift in Sources */,
 				1B1E5891234F3CF400DD848F /* NibLoadeble.swift in Sources */,
+				1B9851B2238D25E0000939AA /* NotificationNameExtension.swift in Sources */,
+				1B4B68EE236B4732008F13B0 /* Date+CurrentTime.swift in Sources */,
 				1B1E5895234F7B0A00DD848F /* BenchmarkViewController.swift in Sources */,
+				1B4B68D4236B1182008F13B0 /* SessionSummaryViewController.swift in Sources */,
+				1B4B68EC236B431B008F13B0 /* StagLayout.swift in Sources */,
 				1B1E5884234E036300DD848F /* ProfileViewController.swift in Sources */,
+				1B4B68D8236B1F48008F13B0 /* NavigationBarShowHideBeheviour.swift in Sources */,
+				1B4B68D2236B0CC4008F13B0 /* DataSourceProvider.swift in Sources */,
 				1B1E5882234E01B800DD848F /* RoundedStyleButton.swift in Sources */,
+				1B4B68E7236B32D7008F13B0 /* UIColor+Random.swift in Sources */,
 				1B7DA494232A420F00821A90 /* AppDelegate.swift in Sources */,
+				1B4B68D6236B1EF2008F13B0 /* ControllerDarkStyleBeheviour.swift in Sources */,
 				1B1E588D234F38F000DD848F /* CustomButton.swift in Sources */,
+				1B4B68E4236B2E57008F13B0 /* TimerCellsSourceProvider.swift in Sources */,
 				1B1E5893234F573200DD848F /* FeedViewController.swift in Sources */,
 				1B5DC83823547DF60093D6B1 /* EndViewController.swift in Sources */,
+				1B4B68DA236B1F91008F13B0 /* DatePrintingBeheviour.swift in Sources */,
+				1B4B68E1236B2BC0008F13B0 /* TimeCell.swift in Sources */,
 				1B5DC83A2354989E0093D6B1 /* MiddleViewController.swift in Sources */,
+				1B4B68EA236B4221008F13B0 /* CustomCollectionViewLayout.swift in Sources */,
+				1B4B68CD236B003B008F13B0 /* CustomTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

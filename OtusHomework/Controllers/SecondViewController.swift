@@ -9,8 +9,7 @@
 import UIKit
 
 class SecondViewController: UIViewController, RoundedStyleButtonDelegate {
-	
-	
+		
 	@IBOutlet weak var roundedSytleButton: RoundedStyleButton!
 	
 	override func viewDidLoad() {

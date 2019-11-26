@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MiddleViewController: UIViewController {
+final class MiddleViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
