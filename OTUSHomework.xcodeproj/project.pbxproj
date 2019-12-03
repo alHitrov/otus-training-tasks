@@ -17,6 +17,8 @@
 		1B1E5893234F573200DD848F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E5892234F573200DD848F /* FeedViewController.swift */; };
 		1B1E5895234F7B0A00DD848F /* BenchmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E5894234F7B0A00DD848F /* BenchmarkViewController.swift */; };
 		1B1E5897234F8E4800DD848F /* ViewControllerLifecycleBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E5896234F8E4800DD848F /* ViewControllerLifecycleBehavior.swift */; };
+		1B28B3F6238FC96F002C07AA /* PieChartDiagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B28B3F5238FC96F002C07AA /* PieChartDiagram.swift */; };
+		1B28B3F8238FC9E1002C07AA /* CGExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B28B3F7238FC9E1002C07AA /* CGExtensions.swift */; };
 		1B4B68CD236B003B008F13B0 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B68CC236B003A008F13B0 /* CustomTableViewCell.swift */; };
 		1B4B68D1236B0CC4008F13B0 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B68CF236B0CC4008F13B0 /* Services.swift */; };
 		1B4B68D2236B0CC4008F13B0 /* DataSourceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B68D0236B0CC4008F13B0 /* DataSourceProvider.swift */; };
@@ -33,6 +35,18 @@
 		1B4B68EE236B4732008F13B0 /* Date+CurrentTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B68ED236B4732008F13B0 /* Date+CurrentTime.swift */; };
 		1B5DC83823547DF60093D6B1 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5DC83723547DF60093D6B1 /* EndViewController.swift */; };
 		1B5DC83A2354989E0093D6B1 /* MiddleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5DC8392354989E0093D6B1 /* MiddleViewController.swift */; };
+		1B7A5AA0239007B3008B27D2 /* PieChartSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7A5A9F239007B3008B27D2 /* PieChartSegment.swift */; };
+		1B7A5AA2239007FC008B27D2 /* CalculateTimeBeheviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7A5AA1239007FC008B27D2 /* CalculateTimeBeheviour.swift */; };
+		1B7A5AA423900838008B27D2 /* PieChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7A5AA323900838008B27D2 /* PieChartModel.swift */; };
+		1B7A5AA8239009DB008B27D2 /* CalculatedTimePieChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7A5AA7239009DB008B27D2 /* CalculatedTimePieChartCell.swift */; };
+		1B7A5AAA23900A2D008B27D2 /* CalculatedTimePieChartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B7A5AA923900A2D008B27D2 /* CalculatedTimePieChartCell.xib */; };
+		1B7A5AAC23917012008B27D2 /* PieChartSourceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7A5AAB23917012008B27D2 /* PieChartSourceProvider.swift */; };
+		1B7A5AAE23952A5D008B27D2 /* PieChartRenderingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7A5AAD23952A5D008B27D2 /* PieChartRenderingProtocol.swift */; };
+		1B7A5AB02395338E008B27D2 /* AnimateFanBeheviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7A5AAF2395338E008B27D2 /* AnimateFanBeheviour.swift */; };
+		1B7A5AB223953E0D008B27D2 /* FanPieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7A5AB123953E0D008B27D2 /* FanPieChart.swift */; };
+		1B7A5AB523966DCB008B27D2 /* FanPieChartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B7A5AB423966DCB008B27D2 /* FanPieChartCell.xib */; };
+		1B7A5AB723966DDC008B27D2 /* FanPieChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7A5AB623966DDC008B27D2 /* FanPieChartCell.swift */; };
+		1B7A5ABB239680B7008B27D2 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7A5ABA239680B7008B27D2 /* PieChartView.swift */; };
 		1B7DA494232A420F00821A90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7DA493232A420F00821A90 /* AppDelegate.swift */; };
 		1B7DA499232A420F00821A90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B7DA497232A420F00821A90 /* Main.storyboard */; };
 		1B7DA49B232A421100821A90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B7DA49A232A421100821A90 /* Assets.xcassets */; };
@@ -52,6 +66,8 @@
 		1B1E5892234F573200DD848F /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		1B1E5894234F7B0A00DD848F /* BenchmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkViewController.swift; sourceTree = "<group>"; };
 		1B1E5896234F8E4800DD848F /* ViewControllerLifecycleBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLifecycleBehavior.swift; sourceTree = "<group>"; };
+		1B28B3F5238FC96F002C07AA /* PieChartDiagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartDiagram.swift; sourceTree = "<group>"; };
+		1B28B3F7238FC9E1002C07AA /* CGExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGExtensions.swift; sourceTree = "<group>"; };
 		1B4B68CC236B003A008F13B0 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		1B4B68CF236B0CC4008F13B0 /* Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		1B4B68D0236B0CC4008F13B0 /* DataSourceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSourceProvider.swift; sourceTree = "<group>"; };
@@ -68,6 +84,18 @@
 		1B4B68ED236B4732008F13B0 /* Date+CurrentTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+CurrentTime.swift"; sourceTree = "<group>"; };
 		1B5DC83723547DF60093D6B1 /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
 		1B5DC8392354989E0093D6B1 /* MiddleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleViewController.swift; sourceTree = "<group>"; };
+		1B7A5A9F239007B3008B27D2 /* PieChartSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartSegment.swift; sourceTree = "<group>"; };
+		1B7A5AA1239007FC008B27D2 /* CalculateTimeBeheviour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateTimeBeheviour.swift; sourceTree = "<group>"; };
+		1B7A5AA323900838008B27D2 /* PieChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartModel.swift; sourceTree = "<group>"; };
+		1B7A5AA7239009DB008B27D2 /* CalculatedTimePieChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatedTimePieChartCell.swift; sourceTree = "<group>"; };
+		1B7A5AA923900A2D008B27D2 /* CalculatedTimePieChartCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculatedTimePieChartCell.xib; sourceTree = "<group>"; };
+		1B7A5AAB23917012008B27D2 /* PieChartSourceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartSourceProvider.swift; sourceTree = "<group>"; };
+		1B7A5AAD23952A5D008B27D2 /* PieChartRenderingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartRenderingProtocol.swift; sourceTree = "<group>"; };
+		1B7A5AAF2395338E008B27D2 /* AnimateFanBeheviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateFanBeheviour.swift; sourceTree = "<group>"; };
+		1B7A5AB123953E0D008B27D2 /* FanPieChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanPieChart.swift; sourceTree = "<group>"; };
+		1B7A5AB423966DCB008B27D2 /* FanPieChartCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FanPieChartCell.xib; sourceTree = "<group>"; };
+		1B7A5AB623966DDC008B27D2 /* FanPieChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanPieChartCell.swift; sourceTree = "<group>"; };
+		1B7A5ABA239680B7008B27D2 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 		1B7DA490232A420F00821A90 /* OTUSHomework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTUSHomework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B7DA493232A420F00821A90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B7DA498232A420F00821A90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -118,13 +146,29 @@
 			path = CustomButton;
 			sourceTree = "<group>";
 		};
-		1B4B68C9236AFDEF008F13B0 /* Controls */ = {
+		1B28B3F2238FC920002C07AA /* PieChartDiagrams */ = {
 			isa = PBXGroup;
 			children = (
+				1B7A5AA323900838008B27D2 /* PieChartModel.swift */,
+				1B7A5ABA239680B7008B27D2 /* PieChartView.swift */,
+				1B7A5A9F239007B3008B27D2 /* PieChartSegment.swift */,
+				1B7A5AAD23952A5D008B27D2 /* PieChartRenderingProtocol.swift */,
+				1B28B3F5238FC96F002C07AA /* PieChartDiagram.swift */,
+				1B7A5AB123953E0D008B27D2 /* FanPieChart.swift */,
+				1B7A5AA1239007FC008B27D2 /* CalculateTimeBeheviour.swift */,
+				1B7A5AAF2395338E008B27D2 /* AnimateFanBeheviour.swift */,
+			);
+			path = PieChartDiagrams;
+			sourceTree = "<group>";
+		};
+		1B4B68C9236AFDEF008F13B0 /* UIControls */ = {
+			isa = PBXGroup;
+			children = (
+				1B28B3F2238FC920002C07AA /* PieChartDiagrams */,
 				1B1E588B234F38CB00DD848F /* CustomButton */,
 				1B1E588A234F336900DD848F /* RoundedStyleButton */,
 			);
-			path = Controls;
+			path = UIControls;
 			sourceTree = "<group>";
 		};
 		1B4B68CA236AFFF6008F13B0 /* Controllers */ = {
@@ -156,6 +200,7 @@
 				1B4B68CF236B0CC4008F13B0 /* Services.swift */,
 				1B4B68D0236B0CC4008F13B0 /* DataSourceProvider.swift */,
 				1B4B68E3236B2E57008F13B0 /* TimerCellsSourceProvider.swift */,
+				1B7A5AAB23917012008B27D2 /* PieChartSourceProvider.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -171,8 +216,9 @@
 		1B4B68DC236B249A008F13B0 /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				1B4B68E0236B2BC0008F13B0 /* TimeCell.xib */,
-				1B4B68DF236B2BC0008F13B0 /* TimeCell.swift */,
+				1B7A5AB323966D69008B27D2 /* FanPieChartCell */,
+				1B7A5AA623900980008B27D2 /* CalculatedTimePieChartCell */,
+				1B7A5AA52390096B008B27D2 /* TimeCall */,
 			);
 			path = CollectionViewCells;
 			sourceTree = "<group>";
@@ -180,6 +226,7 @@
 		1B4B68E5236B329A008F13B0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1B28B3F7238FC9E1002C07AA /* CGExtensions.swift */,
 				1B4B68E6236B32D7008F13B0 /* UIColor+Random.swift */,
 				1B4B68ED236B4732008F13B0 /* Date+CurrentTime.swift */,
 			);
@@ -206,6 +253,33 @@
 			path = ControllerLifeCycleBeheviours;
 			sourceTree = "<group>";
 		};
+		1B7A5AA52390096B008B27D2 /* TimeCall */ = {
+			isa = PBXGroup;
+			children = (
+				1B4B68E0236B2BC0008F13B0 /* TimeCell.xib */,
+				1B4B68DF236B2BC0008F13B0 /* TimeCell.swift */,
+			);
+			path = TimeCall;
+			sourceTree = "<group>";
+		};
+		1B7A5AA623900980008B27D2 /* CalculatedTimePieChartCell */ = {
+			isa = PBXGroup;
+			children = (
+				1B7A5AA923900A2D008B27D2 /* CalculatedTimePieChartCell.xib */,
+				1B7A5AA7239009DB008B27D2 /* CalculatedTimePieChartCell.swift */,
+			);
+			path = CalculatedTimePieChartCell;
+			sourceTree = "<group>";
+		};
+		1B7A5AB323966D69008B27D2 /* FanPieChartCell */ = {
+			isa = PBXGroup;
+			children = (
+				1B7A5AB423966DCB008B27D2 /* FanPieChartCell.xib */,
+				1B7A5AB623966DDC008B27D2 /* FanPieChartCell.swift */,
+			);
+			path = FanPieChartCell;
+			sourceTree = "<group>";
+		};
 		1B7DA487232A420F00821A90 = {
 			isa = PBXGroup;
 			children = (
@@ -229,7 +303,7 @@
 				1B4B68E8236B4211008F13B0 /* CustomCollectionViewLayout */,
 				1B4B68E5236B329A008F13B0 /* Extensions */,
 				1B7DA49A232A421100821A90 /* Assets.xcassets */,
-				1B4B68C9236AFDEF008F13B0 /* Controls */,
+				1B4B68C9236AFDEF008F13B0 /* UIControls */,
 				1B5DC8362354790A0093D6B1 /* ControllerLifeCycleBeheviours */,
 				1B4B68CE236B0CC4008F13B0 /* Services */,
 				1B9851B0238D25BA000939AA /* Notifications */,
@@ -307,6 +381,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B7A5AAA23900A2D008B27D2 /* CalculatedTimePieChartCell.xib in Resources */,
+				1B7A5AB523966DCB008B27D2 /* FanPieChartCell.xib in Resources */,
 				1B4B68E2236B2BC0008F13B0 /* TimeCell.xib in Resources */,
 				1B7DA4C4232A5B0A00821A90 /* Second.storyboard in Resources */,
 				1B7DA49E232A421100821A90 /* LaunchScreen.storyboard in Resources */,
@@ -326,28 +402,40 @@
 			files = (
 				1B1E5897234F8E4800DD848F /* ViewControllerLifecycleBehavior.swift in Sources */,
 				1B1E5886234E1CBE00DD848F /* SecondViewController.swift in Sources */,
+				1B7A5AA2239007FC008B27D2 /* CalculateTimeBeheviour.swift in Sources */,
+				1B7A5AAC23917012008B27D2 /* PieChartSourceProvider.swift in Sources */,
 				1B4B68D1236B0CC4008F13B0 /* Services.swift in Sources */,
+				1B7A5AA0239007B3008B27D2 /* PieChartSegment.swift in Sources */,
 				1B1E5891234F3CF400DD848F /* NibLoadeble.swift in Sources */,
 				1B9851B2238D25E0000939AA /* NotificationNameExtension.swift in Sources */,
+				1B7A5AAE23952A5D008B27D2 /* PieChartRenderingProtocol.swift in Sources */,
 				1B4B68EE236B4732008F13B0 /* Date+CurrentTime.swift in Sources */,
 				1B1E5895234F7B0A00DD848F /* BenchmarkViewController.swift in Sources */,
 				1B4B68D4236B1182008F13B0 /* SessionSummaryViewController.swift in Sources */,
+				1B28B3F6238FC96F002C07AA /* PieChartDiagram.swift in Sources */,
+				1B28B3F8238FC9E1002C07AA /* CGExtensions.swift in Sources */,
 				1B4B68EC236B431B008F13B0 /* StagLayout.swift in Sources */,
+				1B7A5AB223953E0D008B27D2 /* FanPieChart.swift in Sources */,
 				1B1E5884234E036300DD848F /* ProfileViewController.swift in Sources */,
 				1B4B68D8236B1F48008F13B0 /* NavigationBarShowHideBeheviour.swift in Sources */,
 				1B4B68D2236B0CC4008F13B0 /* DataSourceProvider.swift in Sources */,
 				1B1E5882234E01B800DD848F /* RoundedStyleButton.swift in Sources */,
 				1B4B68E7236B32D7008F13B0 /* UIColor+Random.swift in Sources */,
+				1B7A5AB723966DDC008B27D2 /* FanPieChartCell.swift in Sources */,
 				1B7DA494232A420F00821A90 /* AppDelegate.swift in Sources */,
 				1B4B68D6236B1EF2008F13B0 /* ControllerDarkStyleBeheviour.swift in Sources */,
+				1B7A5AB02395338E008B27D2 /* AnimateFanBeheviour.swift in Sources */,
 				1B1E588D234F38F000DD848F /* CustomButton.swift in Sources */,
 				1B4B68E4236B2E57008F13B0 /* TimerCellsSourceProvider.swift in Sources */,
 				1B1E5893234F573200DD848F /* FeedViewController.swift in Sources */,
 				1B5DC83823547DF60093D6B1 /* EndViewController.swift in Sources */,
+				1B7A5ABB239680B7008B27D2 /* PieChartView.swift in Sources */,
 				1B4B68DA236B1F91008F13B0 /* DatePrintingBeheviour.swift in Sources */,
+				1B7A5AA423900838008B27D2 /* PieChartModel.swift in Sources */,
 				1B4B68E1236B2BC0008F13B0 /* TimeCell.swift in Sources */,
 				1B5DC83A2354989E0093D6B1 /* MiddleViewController.swift in Sources */,
 				1B4B68EA236B4221008F13B0 /* CustomCollectionViewLayout.swift in Sources */,
+				1B7A5AA8239009DB008B27D2 /* CalculatedTimePieChartCell.swift in Sources */,
 				1B4B68CD236B003B008F13B0 /* CustomTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

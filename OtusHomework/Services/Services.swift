@@ -17,4 +17,8 @@ class Services {
 	static var timeCellProvider: TimeCellProvider = {
         return TimeCellProvider()
     }()
+	
+	static var pieChartCellProvider: PieChartProvider = {
+        return PieChartProvider()
+    }()
 }

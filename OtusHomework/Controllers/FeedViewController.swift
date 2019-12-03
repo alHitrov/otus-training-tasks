@@ -30,7 +30,6 @@ final class FeedViewController: UIViewController {
 	override func viewWillDisappear(_ animated: Bool) {
 		super.viewWillDisappear(animated)
 		tableView.reloadData()
-//		print(#function.uppercased() + "\(self)")
 	}
 
 	func fillSource() {
@@ -48,7 +47,6 @@ extension FeedViewController: UITableViewDataSource {
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		
 		let cell = tableView.dequeueReusableCell(withIdentifier:"customCell") as! CustomTableViewCell
-//		print(#function)
 		
 		cell.title.text = source[indexPath.row]
 		
